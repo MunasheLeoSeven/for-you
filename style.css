@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  font-family: "Comic Sans MS", cursive;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  position: relative;
+  height: 80px;
+}
+
+button {
+  padding: 12px 25px;
+  margin: 8px;
+  font-size: 1.05em;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background: #adb5bd;
+  color: white;
+  position: absolute;
+}
+
+#message {
+  margin-top: 20px;
+  color: #ff4d6d;
+  font-weight: bold;
+}
+
+.thought-buttons button {
+  width: 100%;
+  margin: 6px 0;
+}

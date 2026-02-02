@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>For You 💖</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Option 1: Reassurance -->
+      <h1>💖 You said yes!! 💖</h1>
+
+      <p>
+        Even if we're not in the same place right now, this still means
+        something special to me.
+      </p>
+
+      <button onclick="revealPromise()">Click for something small 💌</button>
+
+      <p id="promise" style="display: none; margin-top: 20px">
+        I promise to be here — in messages, in laughs, and in all the little
+        moments that matter.
+      </p>
+
+      <!-- New Button -->
+      <button onclick="openLetter()" style="margin-top: 15px">
+        Read something from me 💗
+      </button>
+
+      <hr style="margin: 30px 0; opacity: 0.3" />
+
+      <!-- Option 2: Choose a Thought -->
+      <h3>Choose a thought 🤍</h3>
+
+      <div class="thought-buttons">
+        <button onclick="showThought('sweet')">Something sweet 💕</button>
+        <button onclick="showThought('honest')">Something honest 🤍</button>
+        <button onclick="showThought('comfort')">
+          Something comforting 🌙
+        </button>
+      </div>
+
+      <p id="thoughtText" style="margin-top: 20px"></p>
+
+      <p style="margin-top: 30px; font-style: italic">Happy Valentine’s 💖</p>
+    </div>
+
+    <script>
+      function revealPromise() {
+        document.getElementById("promise").style.display = "block";
+      }
+
+      function showThought(type) {
+        const thoughts = {
+          sweet:
+            "You're like the sun, waking me up from afar.Draining at times, but I would break without your warmth.",
+          honest: "I didn’t rush this — I meant it.",
+          comfort: "No matter the distance, I’m here.",
+        };
+        document.getElementById("thoughtText").textContent = thoughts[type];
+      }
+
+      function openLetter() {
+        window.open("letter.html", "_blank");
+      }
+    </script>
+  </body>
+</html>
